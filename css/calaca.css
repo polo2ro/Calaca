@@ -133,6 +133,11 @@ body {
   color: #ed4877;
   margin-bottom: 5px;
 }
+
+.result p {
+  margin-bottom: 5px;
+}
+
 /* Result */
 
 /* ng-repeat animation */

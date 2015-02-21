@@ -29,7 +29,10 @@
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
       <h2>{{result.Subject}}</h2>
-      <p>From: {{result.From[0]}} The: {{result.Date}}</p>
+      <p>The: {{result.Date}}</p>
+      <p>From: <strong>{{result.From[0]}}</strong> &lt;{{result.From[1]}}&gt;</p>
+      <p ng-repeat="to in result.To">To: <strong>{{to[0]}}</strong> &lt;{{to[1]}}&gt;</p>
+      <p ng-repeat="cc in result.Cc">Cc: <strong>{{cc[0]}}</strong> &lt;{{cc[1]}}&gt;</p>
     </article>
   </section>
   <section class='pagination-controls'>

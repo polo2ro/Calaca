@@ -129,13 +129,19 @@ body {
   border-bottom: 10px solid #ecf0f1;
 }
 .result h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: #ed4877;
   margin-bottom: 5px;
 }
 
 .result p {
   margin-bottom: 5px;
+}
+
+.result .ref {
+  color:#909090;
+  font-size:70%;
+  text-align:right;
 }
 
 /* Result */

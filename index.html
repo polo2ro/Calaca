@@ -13,7 +13,7 @@
 
 <!-- Title and search box -->
 <header class='jumbotron'>
-  <h1 class='title'>Calaca</h1>
+  <h1 class='title'>Imapbox archive search</h1>
   <div class='search-box-container'>
     <input type='text' class='search-box' placeholder='Search' autofocus ng-model='query' ng-change='search(0)'>
   </div>
@@ -28,8 +28,8 @@
   <section class='results'>
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
-      <h2>{{result.name}}</h2>
-      <p>{{result.description}}</p>
+      <h2>{{result.Subject}}</h2>
+      <p>From: {{result.From[0]}} The: {{result.Date}}</p>
     </article>
   </section>
   <section class='pagination-controls'>

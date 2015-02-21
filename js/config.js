@@ -9,9 +9,9 @@
  */
 
 /* Configs */
-var indexName = "name"; //Ex: twitter
-var docType = "type"; //Ex: tweet
-var maxResultsSize = 10;
-var host = "localhost"; //Ex: http://ec2-123-aws.com
+var indexName = "imapbox";
+var docType = "message";
+var maxResultsSize = 30;
+var host = "localhost";
 var port = 9200;
 var protocol = ""; //Default: same as browser

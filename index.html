@@ -28,7 +28,7 @@
   <section class='results'>
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
-      <div class="ref">{{result._id}}</div>
+      <div class="ref" title="With a score of {{result._score}}">{{result._id}}</div>
       <h2>{{result.Subject}}</h2>
       <p>The: {{result.Date}}</p>
       <p>From: <strong title="{{result.From[1]}}">{{result.From[0]}}</strong></p>
